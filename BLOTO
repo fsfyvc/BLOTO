@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B L O T O</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('https://i.pinimg.com/736x/5a/df/92/5adf9232011df281ce9af189a5e704e7.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 30px 0;
+            font-size: 2em;
+            font-weight: 600;
+        }
+        nav {
+            margin: 25px 0;
+            padding: 10px 0;
+            border-bottom: 2px solid #444;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 20px;
+            color: #fff;
+            font-weight: 500;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 25px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        section {
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 30px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px 0;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .game-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .game-item {
+            width: 250px;
+            margin: 15px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .game-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+        }
+        .game-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5em;
+            }
+            nav a {
+                margin: 0 10px;
+                padding: 8px 15px;
+            }
+            .game-item {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحباً بكم في B L O T O</h1>
+        <p>أفضل تجربة لألعاب الفيديو.</p>
+    </header>
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#games">الألعاب</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+    <section id="home">
+        <h2>الرئيسية</h2>
+        <p>مرحباً بك في موقع "B L O T O". هنا تجد أفضل الألعاب التي يمكنك الاستمتاع بها مع أصدقائك.</p>
+    </section>
+    <section id="games">
+        <h2>الألعاب</h2>
+        <div class="game-list">
+            <div class="game-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Fortnite_logo.svg" alt="Fortnite">
+                <h3>فورتنايت</h3>
+                <p>اللعبة الأكثر شهرة في عالم المعارك royale.</p>
+                <a href="https://www.fortnite.com" target="_blank">موقع اللعبة</a>
+            </div>
+            <div class="game-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/League_of_Legends_Logo_2019.svg" alt="League of Legends">
+                <h3>ليج أوف ليجندز</h3>
+                <p>لعبة استراتيجية مشوقة مع لاعبين من جميع أنحاء العالم.</p>
+                <a href="https://www.leagueoflegends.com" target="_blank">موقع اللعبة</a>
+            </div>
+            <div class="game-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Call_of_Duty_Logo.svg" alt="Call of Duty">
+                <h3>كول أوف ديوتي</h3>
+                <p>أفضل لعبة إطلاق نار مع رسوم مذهلة وأجواء حربية مثيرة.</p>
+                <a href="https://www.callofduty.com" target="_blank">موقع اللعبة</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <p>للتواصل معنا، يمكنكم مراسلتنا عبر البريد الإلكتروني: <a href="mailto:support@bloto.com">support@bloto.com</a></p>
+        <form action="mailto:support@bloto.com" method="POST" enctype="text/plain">
+            <label for="name">الاسم:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="message">الرسالة:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 B L O T O. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
